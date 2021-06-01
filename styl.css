@@ -1,0 +1,124 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.bg-dark{
+    background-color: #ffffff !important;
+}
+.back{
+    background-image: url("pp.gif");
+    background-size: cover;
+    height: 115vh;
+}
+.pad{
+    padding-top: 600px;
+}
+h1{
+    font-size: 190px;
+    font-family: 'Anton', sans-serif;
+    color: white;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+.navbar{
+    border: 2px solid rgb(135, 150, 235);
+    font-family: 'Anton', sans-serif;
+}
+.nav-item{
+    margin-left: 180px;
+    font-family: 'Anton', sans-serif;
+}
+
+.mar{
+    margin-bottom: 0%;
+    display: flex;
+}
+.dis{
+    display: flex;
+    margin-top: -18%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0%;
+}
+
+.card {
+    height: 420px;
+    width: 310px;
+    background-color: #285fc6b9;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    text-align: center !important;
+}
+
+.card::before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: -50%;
+    background-color: #5060ef3b;
+    transform: skewY(345deg);
+    transition: 2s ease-in;
+}
+
+.card:hover::before {
+    top: -70%;
+    transform: skewY(390deg);
+}
+
+.card .image {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .image img {
+    max-width: 100%;
+    transition: 2s ease-in;
+}
+
+.card:hover .image img {
+    width: 80%;
+}
+
+.about-product {
+    position: absolute;
+    color: #fff;
+    bottom: -50px !important;
+    text-align: center;
+    left: 20%;
+    transition: 2s ease-in;
+}
+.card:hover .about-product {
+    bottom: 20px !important;
+}
+.buy-now {
+    color: #fff;
+    background-color: #ef5350 !important;
+    border-color: #ef5350 !important;
+    width: 160px;
+    margin-top: 20px;
+}
+.buy-now:focus {
+    box-shadow: none;
+}
+
+.buy-now:hover {
+    color: #fff;
+    background-color: #e84040 !important;
+    border-color: #e84040 !important;
+}
